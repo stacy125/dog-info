@@ -1,11 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const Nav = (props) => {
+const Nav = () => {
 
     return (
         <div>
-            <button className="newPage" onClick={() => props.redirect("all-dogs")}>Click here to get all the dogs</button>
-            {/* <div>{props.redirect}</div> */}
+            <ul className="link">
+                <div>
+                <Link className="home" to="/home">Home</Link> 
+                </div>
+                <div>
+                <Link className="alldogs" to='/alldogs'>All Dogs</Link>
+                </div>
+            </ul>
         </div>
     )
 }
