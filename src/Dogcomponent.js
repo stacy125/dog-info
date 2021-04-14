@@ -9,7 +9,6 @@ class DogComponent extends Component {
     }
 
     render() {
-        console.log(this.props.dog[0]);
         return (
             <div>
                 <div>
